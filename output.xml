@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.11.6 on win32)" generated="20231231 03:25:08.413" rpa="true" schemaversion="4">
+<suite id="s1" name="Tasks" source="d:\Kishore\Trading\RPA\tasks.robot">
+<test id="s1-t1" name="Trading Setup" line="9">
+<kw name="Browser Setup">
+<kw name="Attach Chrome Browser" library="RPA.Browser.Selenium">
+<arg>9922</arg>
+<doc>Attach to an existing instance of Chrome browser.</doc>
+<msg timestamp="20231231 03:25:18.407" level="INFO">Downloaded webdriver to: C:\Users\kisho\AppData\Local\robocorp\webdrivers\.wdm\drivers\chromedriver\win64\120.0.6099.109\chromedriver-win32/chromedriver.exe</msg>
+<msg timestamp="20231231 03:25:19.869" level="INFO">Webdriver version taken into use: ChromeDriver 120.0.6099.109 (3419140ab665596f21b385ce136419fde0924272-refs/branch-heads/6099@{#1483})
+</msg>
+<msg timestamp="20231231 03:25:21.523" level="INFO">Targeted browser version: 120.0.6099</msg>
+<msg timestamp="20231231 03:25:21.524" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<status status="PASS" starttime="20231231 03:25:14.392" endtime="20231231 03:25:22.590"/>
+</kw>
+<kw name="Maximize Browser Window" library="RPA.Browser.Selenium">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20231231 03:25:22.590" endtime="20231231 03:25:22.601"/>
+</kw>
+<kw name="Go To" library="RPA.Browser.Selenium">
+<arg>https://kite.zerodha.com/</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20231231 03:25:22.603" level="INFO">Opening url 'https://kite.zerodha.com/'</msg>
+<status status="PASS" starttime="20231231 03:25:22.602" endtime="20231231 03:25:23.407"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20231231 03:25:26.409" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20231231 03:25:23.408" endtime="20231231 03:25:26.409"/>
+</kw>
+<kw name="Input Text" library="RPA.Browser.Selenium">
+<arg>//input[@id="userid"]</arg>
+<arg>HQ6361</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20231231 03:25:26.411" level="INFO">Typing text 'HQ6361' into text field '//input[@id="userid"]'.</msg>
+<status status="PASS" starttime="20231231 03:25:26.410" endtime="20231231 03:25:26.580"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20231231 03:25:28.582" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20231231 03:25:26.581" endtime="20231231 03:25:28.582"/>
+</kw>
+<kw name="Input Password" library="RPA.Browser.Selenium">
+<arg>//input[@id="password"]</arg>
+<arg>Kishore@95</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<msg timestamp="20231231 03:25:28.584" level="INFO">Typing password into text field '//input[@id="password"]'.</msg>
+<msg timestamp="20231231 03:25:28.650" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20231231 03:25:28.781" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20231231 03:25:28.583" endtime="20231231 03:25:28.781"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20231231 03:25:30.782" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20231231 03:25:28.782" endtime="20231231 03:25:30.782"/>
+</kw>
+<kw name="Click Element" library="RPA.Browser.Selenium">
+<arg>//button[@type="submit"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20231231 03:25:30.784" level="INFO">Clicking element '//button[@type="submit"]'.</msg>
+<status status="PASS" starttime="20231231 03:25:30.783" endtime="20231231 03:25:30.882"/>
+</kw>
+<status status="PASS" starttime="20231231 03:25:14.390" endtime="20231231 03:25:30.883"/>
+</kw>
+<status status="PASS" starttime="20231231 03:25:14.388" endtime="20231231 03:25:30.886"/>
+</test>
+<doc>Template robot main suite.</doc>
+<status status="PASS" starttime="20231231 03:25:08.434" endtime="20231231 03:25:30.893"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tasks</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Tasks">Tasks</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20231231 03:25:12.848" level="ERROR">Error in file 'd:\Kishore\Trading\RPA\Testing.robot' on line 8: Creating keyword 'Testing' failed: User keyword cannot be empty.</msg>
+</errors>
+</robot>
